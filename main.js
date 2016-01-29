@@ -27,6 +27,10 @@ $(document).ready(function () {
         light1.position.set(0, -2, 10);
         //light1.add(new THREE.Mesh(new THREE.SphereGeometry(0.25, 16, 8), new THREE.MeshBasicMaterial({ color: DIR_LIGHT_COLOR })));
         scene.add(light1);
+
+        var light2 = new THREE.DirectionalLight(DIR_LIGHT_COLOR);
+        light2.position.set(20, 20, 10);
+        scene.add(light2);
     }
 
     function addControls(params) {
